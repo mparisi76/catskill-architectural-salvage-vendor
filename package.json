@@ -4,7 +4,7 @@
   "scripts": {
     "generate:static": "node ./scripts/generate-currencies.js && prettier --write ./src/lib/currencies.ts",
     "dev": "vite",
-    "start": "vite build",
+    "start": "npm run start",
     "build": "tsup && node ./scripts/generate-types.js",
     "build:preview": "vite build",
     "build:admin": "medusa build",

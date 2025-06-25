@@ -23,7 +23,7 @@ COPY . ./
 RUN yarn build:preview
 
 # Start the app.
-RUN yarn run dev
+RUN yarn run start
 
 # Use the Caddy image
 # FROM caddy

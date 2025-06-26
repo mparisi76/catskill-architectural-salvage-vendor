@@ -7,6 +7,7 @@ import inspect from "vite-plugin-inspect"
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
 
+  console.log(env);
   const BASE = env.VITE_MEDUSA_BASE || "/"
   const BACKEND_URL = env.VITE_MEDUSA_BACKEND_URL || "http://localhost:9000"
   const STOREFRONT_URL =
